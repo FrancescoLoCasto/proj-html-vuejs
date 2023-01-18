@@ -6,8 +6,27 @@ export default {
 </script>
 
 <template lang="">
-   <div class="containerMatch">
-      
+   <div class="containerMatch text-center">
+      <h1 class="p-3" >
+         Upcoming Matchs
+      </h1>
+      <div class="container">
+         <div class="matchBanner">
+
+         </div>
+         <div class="matchBanner">
+
+         </div>
+         <div class="matchBanner">
+
+         </div>  
+         <div class="matchBanner">
+
+         </div> 
+         <div class="matchBanner">
+
+         </div>
+      </div>
    </div>
    <div class="containerPlayers">
 
@@ -48,6 +67,13 @@ export default {
    .containerMatch{
       height: 120vh;
       background-color: crimson;
+
+      .matchBanner{
+         height: 15vh;
+         background-color: rgba(139, 0, 0, 0.632);
+         margin-bottom: 2rem;
+      }
+
    }
 
    .containerPlayers{
