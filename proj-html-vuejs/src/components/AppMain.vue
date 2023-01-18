@@ -12,22 +12,25 @@ export default {
       </h1>
       <div class="container">
          <div class="matchBanner">
-            <div class="squadOne">
-               <img src="../assets/img/club-3.png" alt="">
-               <h4>
-                  Schalke Club
-               </h4>
-            </div>
-            <h1>
-               VS
-            </h1>
-            <div class="squadTwo">
-               <h4>
-                  Inter Club
-               </h4>
-               <img src="../assets/img/club-4.png" alt="">
-            </div>
+               <div class="squadOne">
+                  <img src="../assets/img/club-3.png" alt="">
+                  <h4>
+                     Schalke Club
+                  </h4>
+               </div>
+               <h1>
+                  VS
+               </h1>
+               <div class="squadTwo">
+                  <h4>
+                     Inter Club
+                  </h4>
+                  <img src="../assets/img/club-4.png" alt="">
+               </div>
+
+            
          </div>
+         
 
 
          <div class="matchBanner">
@@ -101,13 +104,15 @@ export default {
                <img src="../assets/img/club-2.png" alt="">
             </div>
          </div>
-
-
-
       </div>
+
    </div>
    <div class="containerPlayers">
+      <h1>
+         Players
+      </h1>
 
+      
    </div>
 
    <div class="containerTable">
@@ -151,11 +156,11 @@ export default {
 
 
       .matchBanner{
-         padding-left: 15rem;
          display: flex;
+         padding-left: 15rem;
          height: 20vh;
          background-color: rgba(0, 0, 0, 0.3);
-      margin-bottom: 2rem;
+         margin-bottom: 2rem;
 
 
          h1{
@@ -173,6 +178,14 @@ export default {
                color: white;
                font-weight: 700;
             }
+         }
+
+         
+         .blackDate{
+            height: 1rem;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.582);
+            color: white;
          }
 
          .squadTwo{
@@ -194,7 +207,17 @@ export default {
 
    .containerPlayers{
       height: 60vh;
-      background-color: darksalmon;
+      background-image: url(../assets/img/player.jpg);
+      color: white;
+
+      h1{
+         padding: 2rem;
+         text-align: center;
+         font-size: 3rem;
+         font-weight: 700;
+      }
+
+
    }
 
    .containerTable{
