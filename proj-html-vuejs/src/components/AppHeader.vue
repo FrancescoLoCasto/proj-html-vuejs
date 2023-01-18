@@ -43,6 +43,9 @@ export default {
       </div>
 
       <div class="textBox">
+         <div class="arrowButtonLeft">
+            <i class="fa-solid fa-chevron-left"></i>
+         </div>
          <div class="text">
                <h1>
                   Football Club 
@@ -59,17 +62,53 @@ export default {
 
                <div class="learnMore">
 
-                  <h4 class="btn">
-                     Learn More
-                  </h4>
+                     <h4 class="btn">
+                        Learn More
+                     </h4>
                </div>
-            </div>
          </div>
+
+         <div class="arrowButtonRight">
+            <i class="fa-solid fa-chevron-right"></i>
+         </div>
+      </div>
          
       </div>
 
    <div class="gameSquad">
+      <div class="Squad">
+         <div class="InstanbulSport">
+            <h1>Instanbull Sports</h1>
+            <img src="../assets/img/club-1.png" alt="">
+         </div>
+         <div class="vsBox">
+            <h1>
+               vs
+            </h1>
+         </div>
+         <div class="unitedFS">
+            <img src="../assets/img/club-2.png" alt="">
+            <h1>United Fs Club</h1>
+         </div>
+      </div>
 
+      <div class="dateText">
+         <div class="calendar">
+            <i class="fa-regular fa-calendar-days"></i>
+            <h5>May 21, 2022 18:05 pm</h5>
+         </div>
+         
+         <div class="plus">
+            <i class="fa-solid fa-circle-plus"></i>
+            <h5>May 21, 2022 18:05 pm</h5>
+         </div>
+      </div>
+
+      <div class="blackButton">
+         <div class="buttonBox">
+            <h3>View Match Details</h3>
+         </div>
+      </div>
    </div>
 </template>
 
@@ -131,11 +170,46 @@ export default {
       .textBox{
          height: 70vh;
          text-align: center;
-         margin-top: 10rem;
+         display: flex;
+
+         .text{
+            margin-top: 6rem;
+
+
+         }
+
+         .arrowButtonRight{
+            width: 43rem;
+
+            i{
+               padding: 1rem;
+               margin-top: 18rem;
+               margin-left: 30rem;
+
+               border: 1px solid white;
+               border-radius: 100%;
+               color: white;
+            }
+         }
+
+         .arrowButtonLeft{
+            width: 43rem;
+
+            i{
+               margin-right: 30rem;
+               margin-top: 18rem;
+               padding: 1rem;
+               border: 1px solid white;
+               border-radius: 100%;
+               color: white;
+            }
+         }
 
          h1{
             color: white;
             font-size: 5rem;
+            font-weight: 700;
+
          }
 
          h4{
@@ -158,8 +232,80 @@ export default {
    }
 
    .gameSquad{
-      height: 30vh;
-      background-color: cornflowerblue;
+      height: 40vh;
+      background-color: #ffffff;
+
+      .Squad{
+         height: 20vh;
+         display: flex;
+         margin-left: 22rem;
+         
+         
+         .InstanbulSport{
+            display: flex;
+            width: 33%;
+            
+            h1{
+               margin-top: 4rem;
+            }
+         }
+
+
+         .vsBox{
+            width: 10%;
+            text-align: center;
+
+            h1{
+               font-size: 7rem;
+            }
+
+         }
+
+         .unitedFS{
+            display: flex;
+            width: 33%;
+
+            h1{
+               margin-top: 4rem;
+            }
+         }
+      }
+
+      .dateText{
+         display: flex;
+         height: 5vh;
+         margin-left: 40rem;
+
+         .calendar {
+         display: flex;
+         margin: 1rem;
+         }
+
+         .plus{
+         display: flex;
+            margin: 1rem;
+         }
+      }
+
+      .blackButton{
+         height: 10vh;
+
+         .buttonBox{
+            padding: 1rem;
+            text-align: center;
+            width: 15%;
+            color: white;
+            background-color: black;
+            border-radius: 2rem;
+            margin-left: 47rem;
+            margin-top: 2rem;
+
+            h3{
+               font-size: 1.3rem;
+               font-weight: 600;
+            }
+         }
+      }
    }
 
 </style>
