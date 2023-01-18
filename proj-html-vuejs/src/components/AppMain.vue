@@ -20,10 +20,27 @@ export default {
       <div class="resultTable">
          
       </div>
-      <div class="banner-img">
+
+   </div>
+
+   <div class="adv-imgBet">
+
+   </div>
+
+   <div class="blackAdvBanner">
+
+   </div>
+
+   <div class="containerSliderCard">
+      <div class="UppperContainer">
+
+      </div>
+      <div class="cardContainer">
 
       </div>
    </div>
+
+
 </template>
 
 
@@ -39,7 +56,7 @@ export default {
    }
 
    .containerTable{
-      height: 100vh;
+      height: 85vh;
       background-color: rgb(201, 57, 9);
       display: flex;
 
@@ -58,9 +75,31 @@ export default {
          margin: 2rem;
       }
 
-      .banner-img{
+
+   }
+
+   .adv-imgBet{
          height: 20vh;
          background-color: forestgreen;
+      }
+
+   .blackAdvBanner{
+      height: 25vh;
+      background-color: black;
+   }
+
+   .containerSliderCard{
+      height: 95vh;
+      background-color: lightcoral;
+
+      .UppperContainer{
+         height: 20vh;
+         background-color: rgba(158, 9, 9, 0.608);
+      }
+
+      .cardContainer{
+         height: 75vh;
+         background-color: rgba(0, 0, 128, 0.579);
       }
    }
 </style>

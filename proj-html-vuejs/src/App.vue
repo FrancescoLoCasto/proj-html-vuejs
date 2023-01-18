@@ -24,6 +24,10 @@ export default {
   <AppMain/>
 </section>
 
+<section>
+  <AppFooter/>
+</section>
+
 
 
 
