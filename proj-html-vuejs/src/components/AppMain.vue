@@ -7,25 +7,103 @@ export default {
 
 <template lang="">
    <div class="containerMatch text-center">
-      <h1 class="p-3" >
+      <h1 class="p-5 text-light" >
          Upcoming Matchs
       </h1>
       <div class="container">
          <div class="matchBanner">
-
+            <div class="squadOne">
+               <img src="../assets/img/club-3.png" alt="">
+               <h4>
+                  Schalke Club
+               </h4>
+            </div>
+            <h1>
+               VS
+            </h1>
+            <div class="squadTwo">
+               <h4>
+                  Inter Club
+               </h4>
+               <img src="../assets/img/club-4.png" alt="">
+            </div>
          </div>
-         <div class="matchBanner">
 
+
+         <div class="matchBanner">
+            <div class="squadOne">
+               <img src="../assets/img/club-9.png" alt="">
+               <h4>
+                  Atletico Club 
+               </h4>
+            </div>
+            <h1>
+               VS
+            </h1>
+            <div class="squadTwo">
+               <h4>
+                  Schalke Club
+               </h4>
+               <img src="../assets/img/club-6.png" alt="">
+            </div>
          </div>
-         <div class="matchBanner">
 
-         </div>  
          <div class="matchBanner">
-
-         </div> 
-         <div class="matchBanner">
-
+            <div class="squadOne">
+               <img src="../assets/img/club-2.png" alt="">
+               <h4>
+                  United Fs Club 
+               </h4>
+            </div>
+            <h1>
+               VS
+            </h1>
+            <div class="squadTwo">
+               <h4>
+                  Bayern Club
+               </h4>
+               <img src="../assets/img/club-8.png" alt="">
+            </div>
          </div>
+
+         <div class="matchBanner">
+            <div class="squadOne">
+               <img src="../assets/img/club-7.png" alt="">
+               <h4>
+                  Arsenal Club
+               </h4>
+            </div>
+            <h1>
+               VS
+            </h1>
+            <div class="squadTwo">
+               <h4>
+                  Atletico Club
+               </h4>
+               <img src="../assets/img/club-9.png" alt="">
+            </div>
+         </div>
+
+         <div class="matchBanner">
+            <div class="squadOne">
+               <img src="../assets/img/club-1.png" alt="">
+               <h4>
+                  Istanbul Sports 
+               </h4>
+            </div>
+            <h1>
+               VS
+            </h1>
+            <div class="squadTwo">
+               <h4>
+                  United Fs Club
+               </h4>
+               <img src="../assets/img/club-2.png" alt="">
+            </div>
+         </div>
+
+
+
       </div>
    </div>
    <div class="containerPlayers">
@@ -65,13 +143,51 @@ export default {
 
 <style lang="scss">
    .containerMatch{
-      height: 120vh;
-      background-color: crimson;
+      height: 140vh;
+      background-image: url(../assets/img/saha.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+
 
       .matchBanner{
-         height: 15vh;
-         background-color: rgba(139, 0, 0, 0.632);
-         margin-bottom: 2rem;
+         padding-left: 15rem;
+         display: flex;
+         height: 20vh;
+         background-color: rgba(0, 0, 0, 0.3);
+      margin-bottom: 2rem;
+
+
+         h1{
+            font-size: 4rem;
+            color: white;
+            margin-top: 2.5rem;
+         }
+
+         .squadOne{
+            display: flex;
+            width: 40%;
+            h4{
+               margin-top: 2.5rem;
+               font-size: 2.5rem;
+               color: white;
+               font-weight: 700;
+            }
+         }
+
+         .squadTwo{
+            display: flex;
+            width: 50%;
+
+            h4{
+               margin-top: 2.5rem;
+
+               margin-left: 3rem;
+               font-size: 2.5rem;
+               color: white;
+               font-weight: 700;
+            }
+         }
       }
 
    }

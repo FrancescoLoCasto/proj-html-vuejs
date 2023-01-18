@@ -1,12 +1,13 @@
 
+
 <script>
 export default {
-   
+
 }
 </script>
 
 <template lang="">   
-   <div class="container-img">
+   <div class="container-img ">
       <div class="navBar">
          <div class="img-advBox">
             <img src="../assets/img/logo-football.png" alt="">
@@ -44,7 +45,7 @@ export default {
 
       <div class="textBox">
          <div class="arrowButtonLeft">
-            <i class="fa-solid fa-chevron-left"></i>
+               <i class="fa-solid fa-chevron-left"></i>
          </div>
          <div class="text">
                <h1>
@@ -69,7 +70,7 @@ export default {
          </div>
 
          <div class="arrowButtonRight">
-            <i class="fa-solid fa-chevron-right"></i>
+               <i class="fa-solid fa-chevron-right"></i>
          </div>
       </div>
          
@@ -155,6 +156,7 @@ export default {
                color: white;
                list-style-type: none;
                text-transform: uppercase;
+               font-weight: 700;
                
 
                li{
