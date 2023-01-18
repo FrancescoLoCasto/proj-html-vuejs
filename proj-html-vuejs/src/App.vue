@@ -20,6 +20,10 @@ export default {
   <AppHeader/>
 </section>
 
+<section>
+  <AppMain/>
+</section>
+
 
 
 
