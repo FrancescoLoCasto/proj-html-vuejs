@@ -445,7 +445,7 @@ export default {
 
       <div class="resultTable">
          <div class="titleTwo text-center">
-            <h1>League Table</h1>
+            <h1>Fixtures & Results</h1>
          </div>
 
          <div class="resultBannerOne">
@@ -692,13 +692,13 @@ export default {
 
          .resultBannerOne{
             height: 8.5vh;
-            background-color: #212121;
+            background-color: #f3f3f3;
          }
 
          
          .resultBannerTwo{
             height: 8.5vh;
-            background-color: rgb(197, 112, 7);
+            background-color: #ebebeb;
          }
 
          .titleTwo{
