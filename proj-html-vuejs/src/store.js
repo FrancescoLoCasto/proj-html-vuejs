@@ -2,19 +2,26 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
-   clubs: [
+   cardsPlayers: [
       {
-         name: 'nome squadra',
-         img: 'percorso img',
-
-   },
-
+         imgUrl: "../assets/img/player1.jpg",
+         title: '07',
+         text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industries'
+      },
       {
-      name: 'nome squadra',
-      img: 'percorso img',
-      
-   },
-
-   
-]
+         imgUrl: "../assets/img/player2.jpg",
+         title: '09',
+         text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industries'
+      },
+      {
+         imgUrl: "../assets/img/player3.jpg",
+         title: '11',
+         text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industries'
+      },
+      {
+         imgUrl: "../assets/img/player4.jpg",
+         title: '15',
+         text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industries'
+      },
+  ],
 });

@@ -1,5 +1,8 @@
 
 <script>
+import { store } from '../store';
+
+
 export default {
    
 }
@@ -206,7 +209,7 @@ export default {
    }
 
    .containerPlayers{
-      height: 60vh;
+      height: 80vh;
       background-image: url(../assets/img/player.jpg);
       color: white;
 
