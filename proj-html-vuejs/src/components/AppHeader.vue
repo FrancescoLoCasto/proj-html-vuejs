@@ -2,79 +2,87 @@
 
 <script>
 export default {
+   data() {
+      return {
+         images: [ "src/assets/img/slider1-1.jpg", "src/assets/img/slider2-1.jpg", "src/assets/img/slider3.jpg", "src/assets/img/slider4.jpg"],
+         currentImg: 0
+      }
+   },
 
+   methods: {
+         prevImg() {
+         this.currentImg--;
+         if (this.currentImg < 0) {
+         this.currentImg = this.images.length - 1;
+         }
+      },
+
+         nextImg() {
+         this.currentImg++;
+         if (this.currentImg >= this.images.length) {
+         this.currentImg = 0;
+         }
+      }
+   },
+
+   computed: {
+      ImageContainer(){
+         return {
+            'background-image':`url(${this.images[this.currentImg]}) `
+         }
+      }
+   }
 }
 </script>
 
 <template lang="">   
-   <div class="container-img ">
-      <div class="navBar">
-         <div class="img-advBox">
-            <img src="../assets/img/logo-football.png" alt="">
-            <div class="advHeader">
-               <img src="../assets/img/sponsor1.png" alt="">
-               <img src="../assets/img/sponsor2.png" alt="">
-            </div>
-         </div>
-         <div class="nav-list">
-            <ul>
-               <li>
-                  Home
-               </li>
-               <li class="BorderHv">
-                  Fixtures & Result
-               </li>
-               <li>
-                  League Table
-               </li>
-               <li>
-                  Players
-               </li>
-               <li>
-                  Gallery
-               </li>
-               <li>
-                  Blog
-               </li>
-               <li>
-                  Contact
-               </li>
-            </ul>
-         </div>
+
+<div class="container-img" :style="ImageContainer">
+    <div class="navBar">
+      <div class="img-advBox">
+        <img src="../assets/img/logo-football.png" alt="">
+        <div class="advHeader">
+          <img src="../assets/img/sponsor1.png" alt="">
+          <img src="../assets/img/sponsor2.png" alt="">
+        </div>
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li>Home</li>
+          <li class="BorderHv">Fixtures & Result</li>
+          <li>League Table</li>
+          <li>Players</li>
+          <li>Gallery</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="textBox">
+      <div class="arrowButtonLeft" @click="prevImg">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+      <div class="text">
+        <h1>Football Club</h1>
+        <h1>Sport Club</h1>
+
+        <br>
+
+        <h4>Private football matches</h4>
+
+        <div class="learnMore">
+          <h4 class="btn">
+            Learn More <i class="fa-solid fa-arrow-right"></i>
+          </h4>
+        </div>
       </div>
 
-      <div class="textBox">
-         <div class="arrowButtonLeft">
-               <i class="fa-solid fa-chevron-left"></i>
-         </div>
-         <div class="text">
-               <h1>
-                  Football Club 
-               </h1>
-               <h1>
-                  Sport Club
-               </h1>
-               
-               <br>
-
-               <h4>
-                  Private football matches
-               </h4>
-
-               <div class="learnMore">
-
-                     <h4 class="btn">
-                        Learn More <i class="fa-solid fa-arrow-right"></i>
-                     </h4>
-               </div>
-         </div>
-
-         <div class="arrowButtonRight">
-               <i class="fa-solid fa-chevron-right"></i>
-         </div>
+      <div class="arrowButtonRight" @click="nextImg">
+        <i class="fa-solid fa-chevron-right"></i>
       </div>
-         
-      </div>
+    </div>
+  </div>
 
    <div class="gameSquad">
       <div class="Squad">
@@ -118,7 +126,6 @@ export default {
    .container-img{
       height: 110vh;
       width: 100%;
-      background-image: url(../assets/img/slider2-1.jpg);
       background-repeat: no-repeat;
       background-size: cover;
    
