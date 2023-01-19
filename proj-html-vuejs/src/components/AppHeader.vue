@@ -64,7 +64,7 @@ export default {
                <div class="learnMore">
 
                      <h4 class="btn">
-                        Learn More
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
                      </h4>
                </div>
          </div>
@@ -220,14 +220,14 @@ export default {
          }
 
          .learnMore{ 
-            margin: 5rem;
+            margin-top: 4rem;
 
             h4{
+               padding: 1.5rem;
                height: 5rem;
-               width: 25rem;
-               padding: 2rem;
+               width: 20rem;
                border: 2px solid white;
-               border-radius: 45%;
+               border-radius: 2rem;
             }
          }
       }

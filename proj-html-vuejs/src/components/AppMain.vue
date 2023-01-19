@@ -341,8 +341,6 @@ export default {
    }
 
    .containerSliderCard{
-      height: 120vh;
-      background-color: lightcoral;
 
       .UppperContainer{
          height: 30vh;
@@ -370,7 +368,7 @@ export default {
 
       .cardContainer{
          height: 75vh;
-         background-color: rgba(0, 0, 128, 0.579);
+         background-color: #fbfbfb;
       }
    }
 </style>
