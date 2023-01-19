@@ -8,7 +8,7 @@ export default {
 <template lang="">
 <div class="containerFooter">
    <div class="socialContact">
-
+      
    </div>
 
    <div class="socialContact">

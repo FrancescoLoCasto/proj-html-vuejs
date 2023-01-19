@@ -2,6 +2,7 @@
 <script>
 import { store } from '../store';
 import AppPlayersCard from '../components/AppPlayersCard.vue';
+import AppArticleCard from '../components/AppArticleCard.vue';
 
 
 export default {
@@ -9,6 +10,8 @@ export default {
 
    components: {
       AppPlayersCard,
+      AppArticleCard
+
    },
 
    data() {
@@ -178,10 +181,18 @@ export default {
 
    <div class="containerSliderCard">
       <div class="UppperContainer">
-
+         <div class="imgThubs">
+            <img src="../assets/img/thumbs-up.png" alt="">
+         </div>
+         <h1>
+            Resent New & Articles
+         </h1>
+         <h4>
+            Be aware of the football world
+         </h4>
       </div>
       <div class="cardContainer">
-
+         <AppArticleCard v-for="(cardArt) in store.cardsArticle" :cardArt="cardArt" />
       </div>
    </div>
 
@@ -330,12 +341,31 @@ export default {
    }
 
    .containerSliderCard{
-      height: 95vh;
+      height: 120vh;
       background-color: lightcoral;
 
       .UppperContainer{
-         height: 20vh;
-         background-color: rgba(158, 9, 9, 0.608);
+         height: 30vh;
+         background-color: #fbfbfb;
+
+         h1{
+            margin-top: 1rem;
+            text-align: center;
+            font-weight: 700;
+         }
+         
+
+         h4{
+            text-align: center;
+            font-weight: 200;
+            font-size: 1rem;
+         }
+
+         .imgThubs img{
+            height: 8rem;
+            margin-left: 55rem;
+            margin-top: 3rem;
+         }
       }
 
       .cardContainer{
