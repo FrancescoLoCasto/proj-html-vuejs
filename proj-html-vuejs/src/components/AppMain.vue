@@ -1,10 +1,21 @@
 
 <script>
 import { store } from '../store';
+import AppPlayersCard from '../components/AppPlayersCard.vue';
 
 
 export default {
-   
+   name: 'AppMain',
+
+   components: {
+      AppPlayersCard,
+   },
+
+   data() {
+      return {
+         store,
+      }
+   },
 }
 </script>
 
@@ -116,6 +127,10 @@ export default {
       </h1>
 
       
+      <div class="cardContainer d-flex">
+         <AppPlayersCard v-for="(card) in store.cardsPlayers" :card="card" />
+      </div>
+
    </div>
 
    <div class="containerTable">

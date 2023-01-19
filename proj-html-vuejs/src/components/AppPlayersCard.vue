@@ -1,17 +1,21 @@
 
 <script>
+
+
 export default {
    name: 'AppPlayersCard',
 
    props: {
-      cards: {
+      card: {
 
       }
    },
 
+
+
    data() {
       return {
-         
+
       }
    },
 
@@ -22,12 +26,29 @@ export default {
 </script>
 
 <template lang="">
-   <div>
-      
+   <div class="cardContainer">
+      <div class="card">
+         <div class="imgCard">
+            <img :src="card.imgUrl" alt="">
+         </div>
+         <h2 class="numbers">{{ card.title }}</h2>
+         <h4 class="text">{{ card.text }}</h4>
+      </div>
    </div>
 </template>
 
 
-<style lang="scss">
+<style lang="scss" >
    
+   .card{
+      width: 500px;
+      height: 400px;
+      background-color: black;
+
+       img{
+         width: 250px;
+         height: 250px;
+      }
+   }
+
 </style>
