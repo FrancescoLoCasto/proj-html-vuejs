@@ -146,7 +146,9 @@ export default {
 
    <div class="containerTable">
       <div class="leagueTable">
-
+         <div class="titleOne text-center">
+         <h1>League Table</h1>
+      </div>
       </div>
       <div class="resultTable">
          
@@ -294,12 +296,12 @@ export default {
    }
 
    .containerTable{
-      height: 85vh;
+      height: 100vh;
       background-color: rgb(201, 57, 9);
       display: flex;
 
       .leagueTable{
-         height: 75vh;
+         height: 85vh;
          width: 45%;
          background-color: rgba(137, 43, 226, 0.467);
          margin: 2rem;
@@ -307,7 +309,7 @@ export default {
 
       
       .resultTable{
-         height: 75vh;
+         height: 85vh;
          width: 45%;
          background-color: rgba(43, 226, 119, 0.395);
          margin: 2rem;
