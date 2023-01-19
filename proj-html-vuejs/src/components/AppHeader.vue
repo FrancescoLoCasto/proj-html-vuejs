@@ -21,7 +21,7 @@ export default {
                <li>
                   Home
                </li>
-               <li>
+               <li class="BorderHv">
                   Fixtures & Result
                </li>
                <li>
@@ -164,6 +164,9 @@ export default {
                   margin-top: 1.5rem;
                   font-size: 1.5rem;
                }
+
+               
+
             }
          }
       }
