@@ -448,34 +448,75 @@ export default {
             <h1>Fixtures & Results</h1>
          </div>
 
-         <div class="resultBannerOne">
-
+         <div class="resultBannerOne d-flex">
+            <img src="../assets/img/league-club-1.png" alt="">
+            <h4>Instabul Sports</h4>
+            <h1>VS</h1>
+            <h4>United Fs Club</h4>
+            <img src="../assets/img/league-club-2.png" alt="">
          </div>
-         <div class="resultBannerTwo">
-
+         <div class="resultBannerTwo d-flex">
+            <img src="../assets/img/league-club-3.png" alt="">
+            <h4>Schalke Club</h4>
+            <h1>VS</h1>
+            <h4>Inter Club</h4>
+            <img src="../assets/img/league-club-4.png" alt="">
          </div>
-         <div class="resultBannerOne">
-
+         <div class="resultBannerOne d-flex">
+            <img src="../assets/img/league-club-5.png" alt="">
+            <h4>Madrid Club</h4>
+            <h1>VS</h1>
+            <h4>Schalke Club</h4>
+            <img src="../assets/img/league-club-6.png" alt="">
          </div>
-         <div class="resultBannerTwo">
-
+         <div class="resultBannerTwo d-flex">
+            <img src="../assets/img/league-club-7.png" alt="">
+            <h4>Arsenal Club</h4>
+            <h1>VS</h1>
+            <h4>Bayern Club</h4>
+            <img src="../assets/img/league-club-8.png" alt="">
          </div>
-         <div class="resultBannerOne">
-
+         <div class="resultBannerOne d-flex">
+            <img src="../assets/img/league-club-9.png" alt="">
+            <h4>Atletico Club</h4>
+            <h1>VS</h1>
+            <h4>Istanbul Club</h4>
+            <img src="../assets/img/league-club-1.png" alt="">
          </div>
-         <div class="resultBannerTwo">
-
+         <div class="resultBannerTwo d-flex">
+            <img src="../assets/img/league-club-2.png" alt="">
+            <h4>United Fs Club</h4>
+            <h1>VS</h1>
+            <h4>Schalke Club</h4>
+            <img src="../assets/img/league-club-3.png" alt="">
          </div>
-         <div class="resultBannerOne">
-
+         <div class="resultBannerOne d-flex">
+            <img src="../assets/img/league-club-4.png" alt="">
+            <h4>Inter Club</h4>
+            <h1>VS</h1>
+            <h4>Madrid Club</h4>
+            <img src="../assets/img/league-club-5.png" alt="">
          </div>
-         <div class="resultBannerTwo">
-
+         <div class="resultBannerTwo d-flex">
+            <img src="../assets/img/league-club-6.png" alt="">
+            <h4>Schalke Club</h4>
+            <h1>VS</h1>
+            <h4>Arsenal Club</h4>
+            <img src="../assets/img/league-club-7.png" alt="">
          </div>
-         <div class="resultBannerOne">
+         <div class="resultBannerOne d-flex">
+            <img src="../assets/img/league-club-8.png" alt="">
+            <h4>Bayern Club</h4>
+            <h1>VS</h1>
+            <h4>Atletico Club</h4>
+            <img src="../assets/img/league-club-9.png" alt="">
+         </div>
 
+         <div class="BlackViewAll">
+            <h4>View Full Fixtures</h4>
          </div>
       </div>
+
 
    </div>
 
@@ -690,15 +731,62 @@ export default {
          width: 40%;
          margin: 2rem;
 
+         .BlackViewAll{
+            height: 7vh;
+            background-color: black;
+
+            h4{
+               font-size: 1.3rem;
+               padding: 1rem;
+               text-align: center;
+               font-weight: 700;
+               color: white;
+            }
+         }
+
          .resultBannerOne{
-            height: 8.5vh;
+            height: 9vh;
             background-color: #f3f3f3;
+            padding-left: 8.3rem;
+
+            h1{
+               margin-top: 1.5rem;
+               font-size: 1.5rem;
+               font-weight: 600;
+            }
+
+            h4{
+               padding: 1.5rem;
+               font-weight: 200;
+            }
+
+            img{
+               height: 3.5rem;
+               margin: .5rem;
+            }
          }
 
          
          .resultBannerTwo{
-            height: 8.5vh;
+            height: 8.3vh;
             background-color: #ebebeb;
+            padding-left: 8rem;
+
+            h1{
+               margin-top: 1.5rem;
+               font-size: 1.5rem;
+               font-weight: 600;
+            }
+
+            h4{
+               padding: 1.5rem;
+               font-weight: 200;
+            }
+
+            img{
+               height: 3.7rem;
+               margin: .5rem;
+            }
          }
 
          .titleTwo{
@@ -709,6 +797,8 @@ export default {
                font-weight: 700;
             }
          }
+
+
       }
 
 
