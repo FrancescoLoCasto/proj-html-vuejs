@@ -31,24 +31,48 @@ export default {
          <div class="imgCard">
             <img :src="card.imgUrl" alt="">
          </div>
-         <h2 class="numbers">{{ card.title }}</h2>
-         <h4 class="text">{{ card.text }}</h4>
+         <div class="textCard">
+            <h2 class="numbers">{{ card.title }}</h2>
+            <h4 class="text">{{ card.text }}</h4>
+         </div>
       </div>
    </div>
 </template>
 
 
 <style lang="scss" >
-   
-   .card{
-      width: 500px;
-      height: 400px;
-      background-color: black;
 
-       img{
-         width: 250px;
-         height: 250px;
+   .cardContainer{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .card{
+      width: 300px;
+      height: 370px;
+      background-color: black;
+      text-align: center;
+      border-radius: 2rem;
+
+
+         .textCard{
+            margin-bottom: 2rem;
+            color: white;
+            background-color: black;
+            border-radius: 2rem;
+
+         }
+
+         img{
+            width: 300px;
+            height: 270px;
+            border-top-left-radius: 2rem; 
+            border-top-right-radius: 2rem; 
+
+         }
       }
    }
+   
+
 
 </style>

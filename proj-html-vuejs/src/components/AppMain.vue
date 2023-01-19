@@ -131,6 +131,14 @@ export default {
          <AppPlayersCard v-for="(card) in store.cardsPlayers" :card="card" />
       </div>
 
+      <div class="BlackButtonPlayer">
+         <div class="textbutton">
+            <h4>
+            View All Players
+            </h4>
+         </div>
+      </div>
+
    </div>
 
    <div class="containerTable">
@@ -144,11 +152,28 @@ export default {
    </div>
 
    <div class="adv-imgBet">
-
+      <img src="../assets/img/reklam.jpg" alt="">
    </div>
 
-   <div class="blackAdvBanner">
-
+   <div class="blackAdvBanner d-flex">
+      <div class="blackCube">
+         <img src="../assets/img/client2.png" alt="">
+      </div>
+      <div class="blackCube">
+         <img src="../assets/img/client3.png" alt="">
+      </div>
+      <div class="blackCube">
+         <img src="../assets/img/client4.png" alt="">
+      </div>
+      <div class="blackCube">
+         <img src="../assets/img/client7.png" alt="">
+      </div>
+      <div class="blackCube">
+         <img src="../assets/img/client9.png" alt="">
+      </div>
+      <div class="blackCube">
+         <img src="../assets/img/client10.png" alt="">
+      </div>
    </div>
 
    <div class="containerSliderCard">
@@ -235,6 +260,25 @@ export default {
          font-weight: 700;
       }
 
+      .BlackButtonPlayer{
+         margin: 0 auto;
+         margin-top: 7rem;
+         text-align: center;
+         padding: 1rem;
+         width: 20rem;
+         background-color: black;
+         border: 1px solid white;
+         border-radius: 2rem;
+
+
+         h4{
+            font-weight: 700;
+         }
+
+      }
+
+
+
 
    }
 
@@ -262,13 +306,27 @@ export default {
    }
 
    .adv-imgBet{
-         height: 20vh;
-         background-color: forestgreen;
+         height: 25vh;
+         img{
+            margin-left: 15rem;
+            height: 20vh;
+         }
       }
 
    .blackAdvBanner{
-      height: 25vh;
+      height: 30vh;
       background-color: black;
+      padding-top: 1.5rem;
+
+      .blackCube{
+         
+         margin: 2rem;
+         width: 250px;
+         height: 170px;
+         border: 1px solid white;
+         border-radius: 2rem;
+      }
+
    }
 
    .containerSliderCard{
