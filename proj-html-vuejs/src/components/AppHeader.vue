@@ -22,6 +22,10 @@ export default {
          if (this.currentImg >= this.images.length) {
          this.currentImg = 0;
          }
+      },
+
+      autoPlay() {
+         setInterval(this.nextImg,4000)
       }
    },
 
@@ -31,7 +35,11 @@ export default {
             'background-image':`url(${this.images[this.currentImg]}) `
          }
       }
-   }
+   },
+
+   created() {
+      this.autoPlay()
+   },
 }
 </script>
 
