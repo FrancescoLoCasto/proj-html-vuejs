@@ -240,7 +240,7 @@ export default {
       .Squad{
          height: 20vh;
          display: flex;
-         margin-left: 22rem;
+         margin-left: 25rem;
          
          
          .InstanbulSport{
@@ -276,7 +276,7 @@ export default {
       .dateText{
          display: flex;
          height: 5vh;
-         margin-left: 40rem;
+         margin-left: 45rem;
 
          .calendar {
          display: flex;
@@ -299,7 +299,7 @@ export default {
             color: white;
             background-color: black;
             border-radius: 2rem;
-            margin-left: 47rem;
+            margin-left: 50rem;
             margin-top: 2rem;
 
             h3{
