@@ -662,7 +662,8 @@ export default {
    .containerTable{
       height: 100vh;
       background-color: #ffffff;
-      display: flex;
+      display: flex; 
+      padding-left: 7rem;
 
 
       .titleOne{
@@ -849,9 +850,9 @@ export default {
       padding-top: 1.5rem;
 
       .blackCube{
-         
+         padding: .5rem;
          margin: 2rem;
-         width: 250px;
+         width: 240px;
          height: 170px;
          border: 1px solid white;
          border-radius: 2rem;
