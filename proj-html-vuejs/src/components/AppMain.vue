@@ -44,10 +44,18 @@ export default {
                   </h4>
                   <img src="../assets/img/club-4.png" alt="">
                </div>
-
-            
+         </div>
+         <div class="underBanner d-flex">
+            <div class="calendar d-flex">
+            <i class="fa-regular fa-calendar-days"></i>
+            <h5>October 20, 2022 17:00 pm</h5>
          </div>
          
+         <div class="plus d-flex">
+            <i class="fa-solid fa-circle-plus"></i>
+            <h5>Expert Stadium</h5>
+         </div>
+         </div>
 
 
          <div class="matchBanner">
@@ -67,6 +75,17 @@ export default {
                <img src="../assets/img/club-6.png" alt="">
             </div>
          </div>
+         <div class="underBanner d-flex">
+         <div class="calendar d-flex">
+            <i class="fa-regular fa-calendar-days"></i>
+            <h5>September 18, 2022 21:00 pm</h5>
+         </div>
+         
+         <div class="plus d-flex">
+            <i class="fa-solid fa-circle-plus"></i>
+            <h5>Expert Stadium</h5>
+         </div>
+         </div>
 
          <div class="matchBanner">
             <div class="squadOne">
@@ -85,6 +104,19 @@ export default {
                <img src="../assets/img/club-8.png" alt="">
             </div>
          </div>
+         <div class="underBanner d-flex">
+         <div class="calendar d-flex">
+            <i class="fa-regular fa-calendar-days"></i>
+            <h5>August 3, 2022 19:00 pm</h5>
+         </div>
+         
+         <div class="plus d-flex">
+            <i class="fa-solid fa-circle-plus"></i>
+            <h5>Expert Stadium</h5>
+         </div>
+         </div>
+
+
 
          <div class="matchBanner">
             <div class="squadOne">
@@ -102,6 +134,17 @@ export default {
                </h4>
                <img src="../assets/img/club-9.png" alt="">
             </div>
+         </div>
+         <div class="underBanner d-flex">
+         <div class="calendar d-flex">
+            <i class="fa-regular fa-calendar-days"></i>
+            <h5>July 8, 2022 12:00 pm</h5>
+         </div>
+         
+         <div class="plus d-flex">
+            <i class="fa-solid fa-circle-plus"></i>
+            <h5>Expert Stadium</h5>
+         </div>
          </div>
 
          <div class="matchBanner">
@@ -121,6 +164,17 @@ export default {
                <img src="../assets/img/club-2.png" alt="">
             </div>
          </div>
+         <div class="underBanner d-flex">
+         <div class="calendar d-flex">
+            <i class="fa-regular fa-calendar-days"></i>
+            <h5>June 12, 2022 09:00 pm</h5>
+         </div>
+         
+         <div class="plus d-flex">
+            <i class="fa-solid fa-circle-plus"></i>
+            <h5>Expert Stadium</h5>
+         </div>
+         </div>         
       </div>
 
    </div>
@@ -567,6 +621,34 @@ export default {
 
 
 <style lang="scss">
+
+   .underBanner{
+      height: 3vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.405);
+      padding-left: 25rem;
+      color: white;
+
+      .calendar{
+         margin-left: 2rem;
+
+         i{
+            font-size: 1.2rem;
+            margin-right: 1rem;
+         }
+      }
+
+      .plus{
+         margin-left: 2rem;
+
+         i{
+            font-size: 1.2rem;
+            margin-right: 1rem;
+         }
+      }
+   }
+
+
    .containerMatch{
       height: 140vh;
       background-image: url(../assets/img/saha.jpg);
@@ -578,9 +660,9 @@ export default {
       .matchBanner{
          display: flex;
          padding-left: 15rem;
-         height: 20vh;
+         height: 15vh;
          background-color: rgba(0, 0, 0, 0.3);
-         margin-bottom: 2rem;
+         margin-top: 2rem;
 
 
          h1{
