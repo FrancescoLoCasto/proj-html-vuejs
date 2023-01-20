@@ -180,7 +180,14 @@ export default {
                   font-size: 1.5rem;
                }
 
-               
+               .BorderHv{
+                  &:hover{
+                     border-bottom: 2px solid white;
+                  }
+               }
+
+
+
 
             }
          }
