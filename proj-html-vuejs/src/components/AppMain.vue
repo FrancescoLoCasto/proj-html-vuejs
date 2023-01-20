@@ -985,6 +985,8 @@ export default {
    }
 
 
+   // ALL Effect
+
    .slide-in-elliptic-top-fwd{
 	animation: slide-in-elliptic-top-fwd 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
    }
@@ -1002,6 +1004,8 @@ export default {
    cursor: pointer;
    }
 
+
+   // All keyframes 
 
    @keyframes shake-horizontal {
    0%,
