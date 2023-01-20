@@ -47,7 +47,7 @@ export default {
 
 <!-- HeaderBlackTrasparent -->
 
-<div class="container-img" :style="ImageContainer">
+<div class="container-img slide-in-bck-center" :style="ImageContainer">
     <div class="navBar">
       <div class="img-advBox">
         <img src="../assets/img/logo-football.png" alt="">
@@ -76,7 +76,7 @@ export default {
 
     <!-- Slider IMG Dynamic -->
 
-    <div class="textBox">
+    <div class="textBox slide-in-bck-center">
       <div class="arrowButtonLeft" @click="prevImg">
         <i class="fa-solid fa-chevron-left"></i>
       </div>
@@ -88,7 +88,7 @@ export default {
 
         <h4>Private football matches</h4>
 
-        <div class="learnMore">
+        <div class="learnMore shake-horizontal">
           <h4 class="btn">
             Learn More <i class="fa-solid fa-arrow-right"></i>
           </h4>
@@ -103,7 +103,7 @@ export default {
 
   <!-- Match Box  -->
 
-   <div class="gameSquad">
+   <div class="gameSquad slide-in-bck-center bounce-in-top">
       <div class="Squad">
          <div class="InstanbulSport">
             <h1>Instanbull Sports</h1>
@@ -132,7 +132,7 @@ export default {
          </div>
       </div>
 
-      <div class="blackButton">
+      <div class="blackButton shake-horizontal">
          <div class="buttonBox">
             <h3>View Match Details</h3>
          </div>
@@ -356,5 +356,95 @@ export default {
          }
       }
    }
+
+   .slide-in-bck-center {
+	animation: slide-in-bck-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+   }
+
+   .bounce-in-top{
+	animation: bounce-in-top 1.1s both;
+   }
+
+   .shake-horizontal:hover{
+	animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+   }
+
+
+   @keyframes shake-horizontal {
+   0%,
+   100% {
+      transform: translateX(0);
+   }
+   10%,
+   30%,
+   50%,
+   70% {
+      transform: translateX(-10px);
+   }
+   20%,
+   40%,
+   60% {
+      transform: translateX(10px);
+   }
+   80% {
+      transform: translateX(8px);
+   }
+   90% {
+      transform: translateX(-8px);
+   }
+   }
+
+
+
+   @keyframes bounce-in-top {
+   0% {
+      transform: translateY(-500px);
+      animation-timing-function: ease-in;
+      opacity: 0;
+   }
+   38% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+      opacity: 1;
+   }
+   55% {
+      transform: translateY(-65px);
+      animation-timing-function: ease-in;
+   }
+   72% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+   }
+   81% {
+      transform: translateY(-28px);
+      animation-timing-function: ease-in;
+   }
+   90% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+   }
+   95% {
+      transform: translateY(-8px);
+      animation-timing-function: ease-in;
+   }
+   100% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+   }
+   }
+
+
+
+   @keyframes slide-in-bck-center {
+   0% {
+      transform: translateZ(600px);
+      opacity: 0;
+   }
+   100% {
+      transform: translateZ(0);
+      opacity: 1;
+   }
+   }
+
 
 </style>

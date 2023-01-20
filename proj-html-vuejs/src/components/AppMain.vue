@@ -29,7 +29,7 @@ export default {
          Upcoming Matchs
       </h1>
       <!-- Upcoming match -->
-      <div class="container slide-in-elliptic-top-fwd">
+      <div class="container slide-in-elliptic-top-fwd" data-aos="zoom-in">
          <div class="matchBanner">
                <div class="squadOne">
                   <img src="../assets/img/club-3.png" alt="">
@@ -189,10 +189,10 @@ export default {
 
       
       <div class="cardContainer d-flex">
-         <AppPlayersCard v-for="(card) in store.cardsPlayers" :card="card" />
+         <AppPlayersCard v-for="(card) in store.cardsPlayers" :card="card"  />
       </div>
 
-      <div class="BlackButtonPlayer">
+      <div class="BlackButtonPlayer shake-horizontal">
          <div class="textbutton">
             <h4>
             View All Players
@@ -204,7 +204,7 @@ export default {
 
    <!-- Table league and result -->
 
-   <div class="containerTable">
+   <div class="containerTable text-focus-in">
       <div class="leagueTable">
          <div class="titleOne text-center">
             <h1>League Table</h1>
@@ -262,7 +262,7 @@ export default {
             </div>
          </div>
 
-         <div class="bannerMatch d-flex">
+         <div class="bannerMatch d-flex ">
             <div class="leftBanner d-flex">
                <h4>
                   2
@@ -587,22 +587,22 @@ export default {
    </div>
 
    <div class="blackAdvBanner d-flex">
-      <div class="blackCube">
+      <div class="blackCube bounce-in-top">
          <img src="../assets/img/client2.png" alt="">
       </div>
-      <div class="blackCube">
+      <div class="blackCube bounce-in-top">
          <img src="../assets/img/client3.png" alt="">
       </div>
-      <div class="blackCube">
+      <div class="blackCube bounce-in-top">
          <img src="../assets/img/client4.png" alt="">
       </div>
-      <div class="blackCube">
+      <div class="blackCube bounce-in-top">
          <img src="../assets/img/client7.png" alt="">
       </div>
-      <div class="blackCube">
+      <div class="blackCube bounce-in-top">
          <img src="../assets/img/client9.png" alt="">
       </div>
-      <div class="blackCube">
+      <div class="blackCube bounce-in-top">
          <img src="../assets/img/client10.png" alt="">
       </div>
    </div>
@@ -621,8 +621,8 @@ export default {
             Be aware of the football world
          </h4>
       </div>
-      <div class="cardContainer">
-         <AppArticleCard v-for="(cardArt) in store.cardsArticle" :cardArt="cardArt" />
+      <div class="cardContainer ">
+         <AppArticleCard v-for="(cardArt) in store.cardsArticle" :cardArt="cardArt" class="shake-horizontal" />
       </div>
    </div>
 
@@ -985,9 +985,98 @@ export default {
    }
 
 
-   .slide-in-elliptic-top-fwd {
-	animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+   .slide-in-elliptic-top-fwd{
+	animation: slide-in-elliptic-top-fwd 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
    }
+
+   .text-focus-in {
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+   }  
+
+   .bounce-in-top{
+	animation: bounce-in-top 2s both;
+   }
+
+   .shake-horizontal:hover{
+	animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+   cursor: pointer;
+   }
+
+
+   @keyframes shake-horizontal {
+   0%,
+   100% {
+      transform: translateX(0);
+   }
+   10%,
+   30%,
+   50%,
+   70% {
+      transform: translateX(-10px);
+   }
+   20%,
+   40%,
+   60% {
+      transform: translateX(10px);
+   }
+   80% {
+      transform: translateX(8px);
+   }
+   90% {
+      transform: translateX(-8px);
+   }
+   }
+
+
+   @keyframes bounce-in-top {
+   0% {
+      transform: translateY(-500px);
+      animation-timing-function: ease-in;
+      opacity: 0;
+   }
+   38% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+      opacity: 1;
+   }
+   55% {
+      transform: translateY(-65px);
+      animation-timing-function: ease-in;
+   }
+   72% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+   }
+   81% {
+      transform: translateY(-28px);
+      animation-timing-function: ease-in;
+   }
+   90% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+   }
+   95% {
+      transform: translateY(-8px);
+      animation-timing-function: ease-in;
+   }
+   100% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+   }
+   }
+
+
+   @keyframes text-focus-in {
+   0% {
+      filter: blur(12px);
+      opacity: 0;
+   }
+   100% {
+      filter: blur(0px);
+      opacity: 1;
+   }
+   }
+
 
    @keyframes slide-in-elliptic-top-fwd {
    0% {

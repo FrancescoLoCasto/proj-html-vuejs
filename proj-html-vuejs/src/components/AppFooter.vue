@@ -1,8 +1,14 @@
 
 <script>
 export default {
-   
-}
+
+}     
+
+
+
+
+
+
 </script>
 
 <template lang="">
@@ -10,7 +16,7 @@ export default {
    <!-- Footer section of social media and contact -->
 
 <div class="containerFooter">
-   <div class="socialContact">
+   <div class="socialContact puff-in-center ">
       <img src="../assets/img/logo-footer-football.png" alt="">
 
       <div class="pointer">
@@ -46,7 +52,7 @@ export default {
 
    <!-- Mail section  -->
 
-   <div class="socialContactJoin">
+   <div class="socialContactJoin puff-in-center ">
       <h1>
          Join Our Newsletter
       </h1>
@@ -66,7 +72,7 @@ export default {
 
    <!-- List Footer left -->
 
-   <div class="socialContactList">
+   <div class="socialContactList puff-in-center ">
       <div class="footerList">
          <h1>
             Education
@@ -327,6 +333,24 @@ export default {
             margin-left: .7rem;
          }
       }
+
+
+   .puff-in-center {
+	animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+   }
+
+   @keyframes puff-in-center {
+   0% {
+      transform: scale(2);
+      filter: blur(4px);
+      opacity: 0;
+   }
+   100% {
+      transform: scale(1);
+      filter: blur(0px);
+      opacity: 1;
+   }
+   }
 
 
 </style>
