@@ -49,9 +49,14 @@ export default {
     <div class="navBar">
       <div class="img-advBox">
         <img src="../assets/img/logo-football.png" alt="">
-        <div class="advHeader">
+        <div class="advHeader d-flex">
           <img src="../assets/img/sponsor1.png" alt="">
           <img src="../assets/img/sponsor2.png" alt="">
+          <div class="socialMedia d-flex mt-4">
+             <i class="fa-brands fa-facebook-f"></i>
+             <i class="fa-brands fa-instagram"></i>
+             <i class="fa-brands fa-twitter"></i>
+          </div>
         </div>
       </div>
       <div class="nav-list">
@@ -156,6 +161,17 @@ export default {
                position: absolute;
                top: 30%;
                left: -17%;
+
+               .socialMedia{
+                  margin-left: 8rem;
+                  padding-left: 1rem;
+
+                  i{
+                     font-size: 2rem;
+                     color: white;
+                     margin: .5rem;
+                  }
+               }
             }
          }
 
