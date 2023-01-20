@@ -338,7 +338,7 @@ export default {
             text-align: center;
             width: 15%;
             color: white;
-            background-color: black;
+            background-color: #9b51e0;
             border-radius: 2rem;
             margin-left: 50rem;
             margin-top: 2rem;

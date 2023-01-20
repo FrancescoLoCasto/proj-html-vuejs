@@ -167,7 +167,7 @@ export default {
          <div class="underBanner d-flex">
          <div class="calendar d-flex">
             <i class="fa-regular fa-calendar-days"></i>
-            <h5>June 12, 2022 09:00 pm</h5>
+            <h5>June 12, 2022 09:00 am</h5>
          </div>
          
          <div class="plus d-flex">
@@ -725,7 +725,7 @@ export default {
          text-align: center;
          padding: 1rem;
          width: 20rem;
-         background-color: black;
+         background-color: #9b51e0;
          border: 1px solid white;
          border-radius: 2rem;
 
@@ -766,7 +766,7 @@ export default {
 
          .ViewButton{
             height: 7vh;
-            background-color: black;
+            background-color: #9b51e0;
 
             h4{
                font-size: 1.2rem;
@@ -816,7 +816,7 @@ export default {
 
          .BlackViewAll{
             height: 7vh;
-            background-color: black;
+            background-color: #9b51e0;
 
             h4{
                font-size: 1.3rem;
@@ -928,7 +928,7 @@ export default {
 
    .blackAdvBanner{
       height: 30vh;
-      background-color: black;
+      background-color: #9b51e0;
       padding-top: 1.5rem;
 
       .blackCube{

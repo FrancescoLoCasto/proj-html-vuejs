@@ -50,7 +50,7 @@ export default {
       .card{
       width: 300px;
       height: 370px;
-      background-color: black;
+      background-color: #9b51e0;
       text-align: center;
       border-radius: 2rem;
 
@@ -58,7 +58,7 @@ export default {
          .textCard{
             margin-bottom: 2rem;
             color: white;
-            background-color: black;
+            background-color: #9b51e0;
             border-radius: 2rem;
 
          }
