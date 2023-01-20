@@ -29,7 +29,7 @@ export default {
          Upcoming Matchs
       </h1>
       <!-- Upcoming match -->
-      <div class="container">
+      <div class="container slide-in-elliptic-top-fwd">
          <div class="matchBanner">
                <div class="squadOne">
                   <img src="../assets/img/club-3.png" alt="">
@@ -983,5 +983,24 @@ export default {
          background-color: #fbfbfb;
       }
    }
+
+
+   .slide-in-elliptic-top-fwd {
+	animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+   }
+
+   @keyframes slide-in-elliptic-top-fwd {
+   0% {
+      transform: translateY(-600px) rotateX(-30deg) scale(0);
+      transform-origin: 50% 100%;
+      opacity: 0;
+   }
+   100% {
+      transform: translateY(0) rotateX(0) scale(1);
+      transform-origin: 50% 1400px;
+      opacity: 1;
+   }
+   }
+
 
 </style>
