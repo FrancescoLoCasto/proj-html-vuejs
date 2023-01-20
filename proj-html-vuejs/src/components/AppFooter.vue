@@ -6,6 +6,9 @@ export default {
 </script>
 
 <template lang="">
+
+   <!-- Footer section of social media and contact -->
+
 <div class="containerFooter">
    <div class="socialContact">
       <img src="../assets/img/logo-footer-football.png" alt="">
@@ -41,6 +44,8 @@ export default {
 
    </div>
 
+   <!-- Mail section  -->
+
    <div class="socialContactJoin">
       <h1>
          Join Our Newsletter
@@ -58,6 +63,8 @@ export default {
          </h3>
       </div>
    </div>
+
+   <!-- List Footer left -->
 
    <div class="socialContactList">
       <div class="footerList">
@@ -104,6 +111,9 @@ export default {
       </div>
    </div>
 </div>
+
+   <!-- Copyright Section -->
+
    <div class="copy">
       <i class="fa-regular fa-copyright"></i>
       <h1>

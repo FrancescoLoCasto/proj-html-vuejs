@@ -20,6 +20,7 @@ export default {
       }
    },
 }
+
 </script>
 
 <template lang="">
@@ -27,6 +28,7 @@ export default {
       <h1 class="p-5 text-light" >
          Upcoming Matchs
       </h1>
+      <!-- Upcoming match -->
       <div class="container">
          <div class="matchBanner">
                <div class="squadOne">
@@ -178,6 +180,8 @@ export default {
       </div>
 
    </div>
+
+   <!-- Players Card -->
    <div class="containerPlayers">
       <h1>
          Players
@@ -197,6 +201,8 @@ export default {
       </div>
 
    </div>
+
+   <!-- Table league and result -->
 
    <div class="containerTable">
       <div class="leagueTable">
@@ -574,6 +580,8 @@ export default {
 
    </div>
 
+   <!-- ADV section -->
+
    <div class="adv-imgBet">
       <img src="../assets/img/reklam.jpg" alt="">
    </div>
@@ -598,6 +606,8 @@ export default {
          <img src="../assets/img/client10.png" alt="">
       </div>
    </div>
+
+   <!-- Slider article card not dynamics -->
 
    <div class="containerSliderCard">
       <div class="UppperContainer">
@@ -973,4 +983,5 @@ export default {
          background-color: #fbfbfb;
       }
    }
+
 </style>

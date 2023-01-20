@@ -12,24 +12,23 @@ export default {
   }
 }
 
+
+
 </script>
 
 <template>
 
-<section>
-  <AppHeader/>
-</section>
-
-<section>
-  <AppMain/>
-</section>
-
-<section>
-  <AppFooter/>
-</section>
-
-
-
+  <section>
+    <AppHeader/>
+  </section>
+  
+  <section>
+    <AppMain/>
+  </section>
+  
+  <section>
+    <AppFooter/>
+  </section>
 
 </template>
 
@@ -37,6 +36,7 @@ export default {
 @use './styles/general.scss' as *;
 @use './styles/variables' as *;
 @use 'bootstrap/scss/bootstrap.scss' as *;
+
 
 
 </style>

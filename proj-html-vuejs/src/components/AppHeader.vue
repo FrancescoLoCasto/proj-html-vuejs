@@ -45,6 +45,8 @@ export default {
 
 <template lang="">   
 
+<!-- HeaderBlackTrasparent -->
+
 <div class="container-img" :style="ImageContainer">
     <div class="navBar">
       <div class="img-advBox">
@@ -61,16 +63,18 @@ export default {
       </div>
       <div class="nav-list">
         <ul>
-          <li>Home</li>
+          <li class="BorderHv">Home</li>
           <li class="BorderHv">Fixtures & Result</li>
-          <li>League Table</li>
-          <li>Players</li>
-          <li>Gallery</li>
-          <li>Blog</li>
-          <li>Contact</li>
+          <li class="BorderHv">League Table</li>
+          <li class="BorderHv">Players</li>
+          <li class="BorderHv">Gallery</li>
+          <li class="BorderHv">Blog</li>
+          <li class="BorderHv">Contact</li>
         </ul>
       </div>
     </div>
+
+    <!-- Slider IMG Dynamic -->
 
     <div class="textBox">
       <div class="arrowButtonLeft" @click="prevImg">
@@ -96,6 +100,8 @@ export default {
       </div>
     </div>
   </div>
+
+  <!-- Match Box  -->
 
    <div class="gameSquad">
       <div class="Squad">
